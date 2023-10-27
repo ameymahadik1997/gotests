@@ -1,0 +1,28 @@
+Amays-MacBook-Air:BankFunctions amaymahadik$ go run main.go bank_account_helper.go 
+=================Report================
+The account program starts from here:
+Account Holder Name: Amay Mahadik 
+Account Balance: 1000 Rs /-
+
+------Amount: 2000 is deposited in the Account:------
+
+The updated balance:
+Account Holder Name: Amay Mahadik 
+Account Balance: 3000 Rs /-
+
+------Amount: 900 is asked for withdrawal in the Account:------
+
+The updated balance:
+Account Holder Name: Amay Mahadik 
+Account Balance: 2100 Rs /-
+
+------Amount: 6900 is asked for withdrawal in the Account:------
+
+Withdrawal Limit Reached
+Amount asked for withdrawal: 6900 is bigger than the amount in the Account: 2100
+
+The updated balance:
+Account Holder Name: Amay Mahadik 
+Account Balance: 2100 Rs /-
+=======================================
+Amays-MacBook-Air:BankFunctions amaymahadik$
