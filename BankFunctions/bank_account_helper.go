@@ -20,7 +20,7 @@ func (ba *BankAccount) deposit(amount float64) {
 	}
 }
 
-func (ba *BankAccount) print() {
+func (ba *BankAccount) balance() {
 	BankAccountSlice := structToSlice(*ba)
 	for _, banker := range BankAccountSlice {
 		fmt.Print("Account Holder Name: ", banker.ownerName, " \nAccount Balance: ", banker.accountBalance, " Rs /-\n")
