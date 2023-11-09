@@ -2,7 +2,6 @@ package main
 
 import (
 	"errors"
-	"fmt"
 )
 
 type Calculator struct {
@@ -12,7 +11,7 @@ type Calculator struct {
 }
 
 func operation(c *Calculator) (float32, error) {
-	fmt.Println(c.operator, c.value1, c.value2)
+
 	switch c.operator {
 	case 1:
 		return c.value1 + c.value2, nil
