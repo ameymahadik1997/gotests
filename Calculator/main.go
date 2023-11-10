@@ -13,26 +13,34 @@ func main() {
 		log.Fatalf("Input error: %v", err)
 	}
 
-	fmt.Println("Enter value 1:")
-	var value1 float32
-	_, err = fmt.Scanf("%f", &value1) // Use %f for float values
+	stringInput, err := inputParamPrinter(operator)
 	if err != nil {
-		log.Fatalf("Input error: %v", err)
+		log.Fatalln(err)
+	} else {
+		fmt.Print(stringInput)
+		fmt.Println("\nEnter value 1:")
+		var value1 float32
+		_, err = fmt.Scanf("%f", &value1) // Use %f for float values
+		if err != nil {
+			log.Fatalf("Input error: %v", err)
+		}
+
+		fmt.Println("\nEnter value 2:")
+		var value2 float32
+		_, err = fmt.Scanf("%f", &value2) // Use %f for float values
+		if err != nil {
+			log.Fatalf("Input error: %v", err)
+		}
+
+		calculatorMain := Calculator{operator, value1, value2}
+
+		result, err := operation(&calculatorMain)
+		if err != nil {
+			log.Fatalf("Calculation error: %v", err)
+		}
+
+		fmt.Println("\nThe Result of the operation is =>", result)
+
 	}
 
-	fmt.Println("Enter value 2:")
-	var value2 float32
-	_, err = fmt.Scanf("%f", &value2) // Use %f for float values
-	if err != nil {
-		log.Fatalf("Input error: %v", err)
-	}
-
-	calculatorMain := Calculator{operator, value1, value2}
-
-	result, err := operation(&calculatorMain)
-	if err != nil {
-		log.Fatalf("Calculation error: %v", err)
-	}
-
-	fmt.Println("The Result of the operation is =>", result)
 }
