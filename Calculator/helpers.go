@@ -2,7 +2,6 @@ package main
 
 import (
 	"errors"
-	"fmt"
 )
 
 type Calculator struct {
@@ -38,8 +37,8 @@ func inputParamPrinter(operator int) (string, error) {
 	case 4:
 		return "=============The operation to be performed is Divide=============", nil
 	case 5:
-		return "", fmt.Errorf("Exiting The Calulator, Bye!")
+		return "", errors.New("Exiting The Calulator, Bye!")
 	default:
-		return "", fmt.Errorf("Invalid Option, Chose Again")
+		return "", errors.New("Invalid Option, Chose Again")
 	}
 }

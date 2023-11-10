@@ -1,0 +1,54 @@
+Amays-MacBook-Air:Calculator amaymahadik$ go run main.go helpers.go
+
+Enter the operation value (1 - 5) you want to perform 1. Add, 2. Subtract, 3. Mul, 4. Divide, 5. Quit:
+1
+=============The operation to be performed is Addition=============
+Enter value 1:
+12
+
+Enter value 2:
+323
+
+The Result of the operation is => 335
+========================================================================
+
+Enter the operation value (1 - 5) you want to perform 1. Add, 2. Subtract, 3. Mul, 4. Divide, 5. Quit:
+2
+=============The operation to be performed is Substraction=============
+Enter value 1:
+44
+
+Enter value 2:
+23
+
+The Result of the operation is => 21
+========================================================================
+
+Enter the operation value (1 - 5) you want to perform 1. Add, 2. Subtract, 3. Mul, 4. Divide, 5. Quit:
+3
+=============The operation to be performed is Multiplication=============
+Enter value 1:
+43
+
+Enter value 2:
+22
+
+The Result of the operation is => 946
+========================================================================
+
+Enter the operation value (1 - 5) you want to perform 1. Add, 2. Subtract, 3. Mul, 4. Divide, 5. Quit:
+4
+=============The operation to be performed is Divide=============
+Enter value 1:
+23
+
+Enter value 2:
+43
+
+The Result of the operation is => 0.53488374
+========================================================================
+
+Enter the operation value (1 - 5) you want to perform 1. Add, 2. Subtract, 3. Mul, 4. Divide, 5. Quit:
+5
+Exiting The Calulator, Bye!
+Amays-MacBook-Air:Calculator amaymahadik$
