@@ -39,6 +39,6 @@ func inputParamPrinter(operator int) (string, error) {
 	case 5:
 		return "", errors.New("Exiting The Calulator, Bye!")
 	default:
-		return "", errors.New("Invalid Option, Chose Again")
+		return "wrongOption", nil
 	}
 }

@@ -10,7 +10,7 @@ func main() {
 		var operator int
 		_, err := fmt.Scanf("%d", &operator)
 		if err != nil {
-			fmt.Println(err)
+			fmt.Println("ERRORED: Error because the program ", err)
 			break
 		}
 
@@ -18,6 +18,9 @@ func main() {
 		if err != nil {
 			fmt.Println(err)
 			break
+		} else if stringInput == "wrongOption" {
+			fmt.Println("Invalid Choice of options, please select from 1 - 5.")
+			continue
 		} else {
 			fmt.Print(stringInput)
 			fmt.Println("\nEnter value 1:")

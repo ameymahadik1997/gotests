@@ -52,3 +52,45 @@ Enter the operation value (1 - 5) you want to perform 1. Add, 2. Subtract, 3. Mu
 5
 Exiting The Calulator, Bye!
 Amays-MacBook-Air:Calculator amaymahadik$
+
+
+<><><><><><><Negative Scenarios><><><><><><><>
+
+Amays-MacBook-Air:Calculator amaymahadik$ go run main.go helpers.go
+
+Enter the operation value (1 - 5) you want to perform 1. Add, 2. Subtract, 3. Mul, 4. Divide, 5. Quit:
+a
+ERRORED: Error because the program  expected integer
+
+Amays-MacBook-Air:Calculator amaymahadik$ go run main.go helpers.go
+
+Enter the operation value (1 - 5) you want to perform 1. Add, 2. Subtract, 3. Mul, 4. Divide, 5. Quit:
+6
+Invalid Choice of options, please select from 1 - 5.
+
+Enter the operation value (1 - 5) you want to perform 1. Add, 2. Subtract, 3. Mul, 4. Divide, 5. Quit:
+5
+Exiting The Calulator, Bye!
+Amays-MacBook-Air:Calculator amaymahadik$
+
+Amays-MacBook-Air:Calculator amaymahadik$ go run main.go helpers.go
+
+Enter the operation value (1 - 5) you want to perform 1. Add, 2. Subtract, 3. Mul, 4. Divide, 5. Quit:
+1
+=============The operation to be performed is Addition=============
+Enter value 1:
+d
+Please Provide the correct type of Integer or Float:  strconv.ParseFloat: parsing "": invalid syntax
+Amays-MacBook-Air:Calculator amaymahadik$
+Amays-MacBook-Air:Calculator amaymahadik$ go run main.go helpers.go
+
+Enter the operation value (1 - 5) you want to perform 1. Add, 2. Subtract, 3. Mul, 4. Divide, 5. Quit:
+1
+=============The operation to be performed is Addition=============
+Enter value 1:
+112
+
+Enter value 2:
+f
+Please Provide the correct type of Integer or Float:  strconv.ParseFloat: parsing "": invalid syntax
+Amays-MacBook-Air:Calculator amaymahadik$
